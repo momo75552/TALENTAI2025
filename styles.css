@@ -742,28 +742,37 @@ button:focus-visible,
   border-radius: 5px;
 }
 
+.figma-section .row {
+  display: flex;
+  flex-wrap: wrap; /* Assure que les éléments s'adaptent correctement sur différents écrans */
+}
+
+.figma-section .col-md-6 {
+  display: flex;
+  justify-content: center; /* Centrer le contenu dans chaque colonne */
+  align-items: center; /* Aligner verticalement */
+}
+
+.figma-section .col-md-6.text-content {
+  padding: 20px; /* Ajout de padding pour espacer le texte */
+}
+
+.figma-section .col-md-6.image-container img {
+  width: 100%; /* S'assure que l'image est responsive */
+  height: auto;
+  object-fit: cover;
+}
+
 /* Mobile : Empiler les éléments avec l'image en dessous */
 @media (max-width: 767px) {
   .figma-section .row {
-    display: flex;
     flex-direction: column-reverse; /* Change l'ordre pour que l'image soit en dessous */
-    align-items: center;
   }
 
   .figma-section .col-md-6 {
     width: 100%; /* Chaque colonne prend toute la largeur en mobile */
     text-align: center; /* Centrer le contenu */
     margin-bottom: 20px; /* Ajouter un petit espace entre le texte et l'image */
-  }
-
-  .figma-section .col-md-6.text-content {
-    margin-bottom: 20px; /* Marge en bas pour le texte */
-  }
-
-  .figma-section .col-md-6.image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
   }
 }
 
