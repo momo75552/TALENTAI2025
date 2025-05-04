@@ -661,21 +661,29 @@ button:focus-visible,
 }
 
 .figma-section .container {
-  max-width: 100%;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: row; /* Aligne les éléments horizontalement */
+  justify-content: center; /* Centrer le contenu */
 }
 
-.figma-section .grid-container {
+.figma-section .row {
   display: flex;
-  align-items: center;
-  width: 100%;
+  flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur les petits écrans */
+  align-items: center; /* Centre verticalement les éléments */
 }
 
-.figma-section .text-content {
-  width: 100%;
+.figma-section .col-md-6 {
+  flex: 1;
+}
+
+.figma-section .col-md-6.text-content {
   padding: 20px;
+}
+
+.figma-section .col-md-6.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .figma-section .tag {
@@ -705,77 +713,27 @@ button:focus-visible,
 }
 
 .figma-section .image-container {
-  position: relative;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.figma-section .image-container img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.figma-section .image-wrapper {
-  position: relative;
-  z-index: 2;
-}
-
-.figma-section .figma-image {
-  width: 100%;
-  max-width: 100%;
-}
-
-.figma-section .graph-container {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin-top: 20px;
-}
-
-.figma-section .graph-bar {
-  width: 30%;
-  height: 10px;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-}
-
-.figma-section .row {
-  display: flex;
-  flex-wrap: wrap; /* Assure que les éléments s'adaptent correctement sur différents écrans */
-}
-
-.figma-section .col-md-6 {
-  display: flex;
-  justify-content: center; /* Centrer le contenu dans chaque colonne */
-  align-items: center; /* Aligner verticalement */
-}
-
-.figma-section .col-md-6.text-content {
-  padding: 20px; /* Ajout de padding pour espacer le texte */
-}
-
-.figma-section .col-md-6.image-container img {
-  width: 100%; /* S'assure que l'image est responsive */
-  height: auto;
-  object-fit: cover;
-}
-
-/* Mobile : Empiler les éléments avec l'image en dessous */
 @media (max-width: 767px) {
   .figma-section .row {
-    flex-direction: column-reverse; /* Change l'ordre pour que l'image soit en dessous */
+    flex-direction: column-reverse; /* Empile les éléments, avec l'image en dessous */
   }
 
   .figma-section .col-md-6 {
     width: 100%; /* Chaque colonne prend toute la largeur en mobile */
-    text-align: center; /* Centrer le contenu */
-    margin-bottom: 20px; /* Ajouter un petit espace entre le texte et l'image */
+    text-align: center; /* Centrer le texte et l'image */
+  }
+
+  .figma-section .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
-
 
 .features-section {
   padding: 5rem 0;
