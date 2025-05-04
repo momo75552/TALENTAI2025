@@ -1,0 +1,795 @@
+/* Section Hero */
+
+
+.hero-section {
+   background: linear-gradient(to bottom right, #0e3b5e, #0e3b5e90);
+  color: #343a40; /* Texte sombre pour plus de lisibilité sur fond clair */
+  padding: 5rem 0; /* Espacement vertical pour aérer la section */
+  display: flex;
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+  
+}
+
+.hero-section .container {
+  text-align: center; /* Centre le texte à l'intérieur du container */
+  width: 100%;
+  max-width: 960px; /* Limite la largeur du contenu pour éviter un étalement excessif */
+  padding: 0 1rem; /* Padding interne pour éviter que le texte touche les bords */
+}
+
+.hero-section .text-content {
+  max-width: 800px; /* Limite la largeur du contenu */
+  margin: 0 auto; /* Centrage horizontal du contenu */
+}
+
+.hero-section .tag {
+  background-color: rgba(0, 255, 255, 0.2); /* Couleur légère pour le tag */
+  color: #00ffff; /* Couleur cyan */
+  padding: 0.25rem 0.5rem;
+  border-radius: 90px; /* Bord arrondi */
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 1rem;
+   max-width: 110px; /* Limite la longueur du tag à une largeur maximale */
+}
+
+.hero-section h1.display-4 {
+  font-size: 3rem; /* Taille du titre plus grande */
+  font-weight: 700; /* Plus de poids pour rendre le titre plus marqué */
+  margin-bottom: 1.5rem; /* Marge sous le titre pour espacer le texte */
+}
+
+.hero-section .lead {
+  font-size: 1.25rem; /* Taille de texte agréable pour le sous-titre */
+  font-weight: 500; /* Plus de poids pour rendre le titre plus marqué */
+  margin-bottom: 1.5rem; /* Marge sous le sous-titre */
+  color: #fff; /* Couleur du texte pour le sous-titre */
+}
+
+
+
+.overview-section .grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.overview-section {
+
+  display: flex;
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center;     /* Centre le contenu verticalement */
+  flex-direction: column;  /* Permet à la section d'être centrée dans les deux dimensions */
+  padding: 4rem 0;         /* Espacement vertical */
+}
+
+.overview-section .row {
+  display: flex;
+  justify-content: center; /* Centre les colonnes horizontalement */
+  align-items: center;     /* Centre les colonnes verticalement */
+  width: 100%;
+}
+
+.overview-section .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 300px; /* Réduction de la hauteur de l'image */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overview-section .cas-image {
+  max-width: 100%;  /* Limite la largeur de l'image à celle du conteneur */
+  max-height: 100%; /* Limite la hauteur de l'image à celle du conteneur */
+  width: auto;      /* Largeur automatique pour conserver les proportions */
+  height: auto;     /* Hauteur automatique pour conserver les proportions */
+}
+
+.overview-section .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 1rem;
+}
+
+.overview-section .text-content h2 {
+  font-size: 2rem;
+  color: #0e3b5e;
+  margin-bottom: 1rem;
+}
+
+.overview-section .text-content p {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.overview-section .info-box {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-left: 4px solid #007acc;
+  border-radius: 0.5rem;
+}
+
+.overview-section .info-box h3 {
+  font-size: 1.5rem;
+  color: #0e3b5e;
+  margin-bottom: 0.5rem;
+}
+
+.overview-section .details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.overview-section .details-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.overview-section .bullet {
+  color: #007acc;
+  font-weight: bold;
+}
+
+
+
+
+.challenge-section {
+
+  padding: 5rem 0;
+    background-color: #f0f2f5;
+  text-align: center;
+}
+
+.challenge-section h2 {
+  font-size: 2rem;
+  color: #0e3b5e;
+  margin-bottom: 1rem;
+}
+
+.challenge-section p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.challenge-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.challenge-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+
+  flex: 1 1 300px; /* Permet aux cartes de s'ajuster en largeur */
+  max-width: 300px; /* Limite la largeur maximale des cartes */
+}
+
+.challenge-section .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  stroke: #22c55e;
+  background-color: rgba(8, 145, 178, 0.2); /* Fond semi-transparent */  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.icon-container svg {
+  stroke: #0891b2; /* Couleur personnalisée */
+ 
+}
+.challenge-section .icon {
+  width: 24px;
+  height: 24px;
+  color: #007acc;
+}
+
+.challenge-section .challenge-card h3 {
+  font-size: 1.5rem;
+  color: #0e3b5e;
+  margin-bottom: 0.5rem;
+}
+
+.challenge-section.challenge-card p {
+  font-size: 25px;
+  color: #666;
+}
+
+.solution-section {
+  padding: 5rem 0;
+  
+}
+
+.solution-section .grid-container {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.solution-section .text-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  background-color: #ffffff; /* Fond blanc */
+  padding: 2rem; /* Espacement interne */
+  border-radius: 0.75rem; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.solution-section .tag {
+  background-color: #cffafe; /* Fond bleu clair */
+  color: #155e75; /* Couleur du texte */
+  padding: 0.25rem 0.75rem; /* Espacement interne */
+  border-radius: 9999px; /* Bords très arrondis pour un effet de capsule */
+  font-size: 18px; /* Taille de la police */
+  font-weight: 500; /* Poids de la police */
+  display: inline-block; /* Affichage en ligne */
+  margin-bottom: 1rem; /* Espacement en dessous de l'élément */
+  max-width: 110px; /* Limite la longueur du tag à une largeur maximale */
+}
+}
+
+.solution-section .text-content h2 {
+  font-size: 2rem;
+  color: #0e3b5e;
+  margin-bottom: 1rem;
+}
+
+.solution-section .text-content p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.solution-section .steps-list {
+  list-style: none;
+  padding: 0;
+}
+
+.solution-section .steps-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.solution-section.step-number {
+  background-color: #0e3b5e;
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.solution-section .steps-list p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.solution-section .steps-list p strong {
+  font-size: 1rem;
+  color: #007acc;
+}
+
+
+.solution-section{
+ background-color: #f0f2f5;
+}
+
+solution-section .features-list svg {
+  width: 30px; /* h-5 */
+  height: 40px; /* w-5 */
+  margin-top: 0.125rem; /* mt-0.5 */
+  stroke: #22c55e; /* text-green-500 */
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.solution-section .features-list svg {
+  width: 30px; /* 20px */
+  height: 30px ;
+  stroke: #22c55e;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.solution-section .features-list  .steps-number strong {
+  color: #0f172a; /* Exemple : bleu foncé (tu peux remplacer par n'importe quelle couleur) */
+}
+
+
+
+.solution-section .features-list li {
+  display: flex;
+  align-items: center; /* vertical centering */
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.solution-section .features-list span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.25rem;
+  font-size:1.25rem;
+}
+
+.solution-section .features-box {
+  flex: 1;
+  max-width: 800px; /* Réduit la largeur max pour l'alignement */
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+
+.solution-section.team-info {
+  margin-top: 2rem;
+}
+
+.solution-section .team-info h4 {
+  font-size: 25px;
+  color: #0e3b5e;
+  margin-bottom: 0.5rem;
+}
+
+.solution-section .team-members {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.solution-section .member {
+  width: 48px;
+  height: 48px;
+  background-color: #e0f7fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: #007acc;
+}
+
+.solution-section .team-info span {
+  font-size: 25px;
+  color: #666;
+}
+
+
+.results-section {
+  padding: 5rem 0;
+   background-color: #f9fafb;;
+  text-align: center;
+}
+
+.results-section h2 {
+  font-size: 2rem;
+  color: #0e3b5e;
+  margin-bottom: 1rem;
+}
+
+.results-section p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.results-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+
+}
+
+.result-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  flex: 1 1 300px; /* Permet aux cartes de s'ajuster en largeur */
+  max-width: 300px; /* Limite la largeur maximale des cartes */
+}
+
+.result-icon {
+  background-color: #e0f7fa;
+  color: #007acc;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+}
+
+.result-card h3 {
+  font-size: 1.5rem;
+  color: #0e3b5e;
+  margin-bottom: 0.5rem;
+}
+
+.result-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.testimonial-block .testimonial-block {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    
+    margin: 0 auto; /* ← Centrage horizontal */
+    
+    border: 1px solid #e5e7eb;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: #f9fafb;
+
+}
+
+.testimonial-block .quote-icon {
+  align-self: flex-start;
+}
+
+.testimonial-block .testimonial-text {
+  font-size: 1rem;
+  line-height: 1.625;
+  color: #374151; /* gray-700 */
+}
+
+
+.testimonial-block .author-image {
+  background-color: #06b6d4; /* cyan-500 */
+  color: white;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.testimonial-block .author-details {
+  line-height: 1;         /* Réduit l'espacement vertical */
+  margin: 0;
+  padding: 0;
+}
+.testimonial-block .author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.testimonial-block .author-details p {
+  margin: 0;              /* Supprime les marges par défaut */
+}
+.testimonial-block .author-name {
+  font-weight: 600;
+}
+
+.testimonial-block .author-title {
+  font-size: 0.875rem;
+  color: #6b7280; /* gray-500 */
+}
+.benefits-section {
+  padding: 5rem 0;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.benefits-section h2 {
+  font-size: 2rem;
+  color: #0e3b5e;
+  margin-bottom: 1rem;
+}
+
+.benefits-section p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+
+
+
+.benefits-grid {
+  display: flex;
+  justify-content: center; /* Centre les éléments */
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: nowrap; /* Tous sur une ligne */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text-content,
+.benefits-list {
+  flex: 1 1 50%;
+  max-width: 500px;
+}
+
+.text-content {
+  text-align: left;
+}
+.benefits-list {
+  text-align: left;
+}
+.benefits-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.check-icon {
+  color: #007acc;
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+.benefits-list strong {
+  font-size: 1rem;
+  color: #0e3b5e;
+}
+
+.benefits-list p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+
+.stats-grid {
+ display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  flex-wrap: wrap;
+  justify-content: center; /* Centre horizontalement */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2rem;
+  color: #007acc;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.timeline-section {
+  padding: 5rem 0;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.timeline-section h2 {
+  font-size: 2rem;
+  color: #0e3b5e;
+  margin-bottom: 1rem;
+}
+
+.timeline-section p {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+
+
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Espace les éléments également */
+  flex-wrap: wrap; /* Permet de passer à la ligne suivante si nécessaire */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; /* Positionne la ligne sur le côté gauche */
+  width: 2px;
+  background-color: #0079a1;
+  transform: translateX(0); /* Ne déplace plus la ligne */
+}
+
+
+.timeline-icon {
+  position: absolute;
+  left: -16px; /* Place le numéro directement à gauche de la ligne */
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background-color: #0079a1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.timeline-item {
+  position: relative;
+  flex: 1 1 100%; /* Permet à chaque carte de prendre 100% de la largeur disponible */
+  max-width: 100%; /* Assure que chaque carte peut occuper toute la largeur */
+  margin-bottom: 2rem; /* Espacement entre les cartes */
+  padding-left: 60px; /* Garder un peu d'espace pour les numéros et la ligne */
+}
+
+.timeline-content {
+  background-color: white;
+  padding: 2rem; /* Espace à l'intérieur des cartes */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Assure que la carte occupe toute la largeur disponible */
+}
+
+.timeline-content h3 {
+  font-size: 1.5rem; /* Taille du titre */
+  color: #0e3b5e;
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  font-size: 1.125rem; /* Taille du texte */
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.timeline-date {
+  font-size: 1rem;
+  color: #0079a1;
+  font-weight: bold;
+}.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.section-cta {
+  background: linear-gradient(to bottom right, #0e3b5e, #0e3b5e90);
+  color: #fff;
+  text-align: center;
+}
+
+.section-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.section-cta .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.section-cta .btn-primary, .btn-secondary {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none; /* Ajout pour enlever le soulignement des liens */
+  display: inline-block; /* Ajout pour s'assurer que les liens se comportent comme des boutons */
+}
+
+.section-cta .btn-primary {
+  background-color: #1cb7fe; /* Couleur bleue pour le bouton principal */
+  color: white;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.section-cta.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+}
+
+.section-cta .btn-secondary {
+  background-color: white; /* Couleur blanche pour le bouton secondaire */
+  color: #0e3b5e;
+  border: 1px solid #0e3b5e; /* Bordure pour le bouton secondaire */
+}
+
+.section-cta .btn-secondary:hover {
+  background-color: #f0f7ff; /* Légère teinte bleue au survol */
+}.sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .sr-only-focusable:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      clip: auto;
+      white-space: normal;
+    }

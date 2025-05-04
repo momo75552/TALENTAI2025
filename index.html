@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentAI</title>
+  <!-- Lien vers le CDN Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Lien d'accès rapide -->
+  <a href="#accueil" class="sr-only sr-only-focusable">Aller au contenu principal</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/talentAI.png" alt="Logo TalentAI">
+        </a>
+      </div>
+
+      <!-- Burger -->
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+
+    <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="solution.html">Solution</a></li>
+          <li><a href="cas.html">Étude de cas</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Bouton à droite -->
+<a href="contact.html" class="cta-button btn btn-primary">Nous contacter</a>
+<!-- Menu mobile -->
+      <div class="mobile-nav" id="mobileMenu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="solution.html">Solution</a></li>
+          <li><a href="cas.html">Étude de cas</a></li>
+          <li><a href="equipe.html">Équipe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+
+<main>
+  <!-- Section Accueil -->
+  <section id="accueil" class="section-accueil py-5" aria-labelledby="titre-accueil">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="text-content">
+        <h1 id="titre-accueil">Recruter plus vite, <span class="highlight">plus humain</span></h1>
+        <p>TalentAI révolutionne le recrutement grâce à l'intelligence artificielle. Trouvez les meilleurs talents sans biais, avec une expérience candidat optimale.</p>
+        <a href="solution.html" class="btn btn-primary">Découvrir la solution</a>
+      </div>
+      <div class="image-container">
+        <img src="image/talentai.png" alt="Illustration TalentAI" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Avantages -->
+  <section class="section-avantages py-5" aria-labelledby="titre-avantages">
+    <div class="container text-center">
+      <h2 id="titre-avantages">Pourquoi choisir TalentAI ?</h2>
+      <p>Notre solution PlurineurAI transforme votre processus de recrutement grâce à l'intelligence artificielle.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="avantage">
+            <div class="icon" aria-hidden="true"></div>
+            <h3>Gain de temps</h3>
+            <p>Réduisez de 70% le temps consacré au tri des CV et à la présélection des candidats.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="avantage">
+            <div class="icon" aria-hidden="true"></div>
+            <h3>Meilleurs recrutements</h3>
+            <p>Augmentez de 40% la qualité de vos recrutements grâce à notre algorithme de matching avancé.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="avantage">
+            <div class="icon" aria-hidden="true"></div>
+            <h3>Recrutement éthique</h3>
+            <p>Éliminez les biais inconscients et favorisez la diversité dans vos équipes.</p>
+          </div>
+        </div>
+      </div>
+      <a href="solution.html" class="btn btn-primary mt-3">En savoir plus sur notre solution</a>
+    </div>
+  </section>
+
+  <!-- Section Expertises -->
+  <section class="section-expertises bg-white py-5" aria-labelledby="titre-expertises">
+    <div class="container text-center">
+      <h2 id="titre-expertises">Nos expertises</h2>
+      <p>Découvrez comment notre technologie s'adapte à différents secteurs et besoins spécifiques.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="expertise">
+            <div class="icon" aria-hidden="true"></div>
+            <h3>Recrutement inclusif</h3>
+            <p>Notre IA est conçue pour éliminer les biais inconscients et favoriser la diversité dans vos équipes.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="expertise">
+            <div class="icon" aria-hidden="true"></div>
+            <h3>Analyse prédictive RH</h3>
+            <p>Anticipez les besoins en recrutement et optimisez la gestion des talents grâce à notre IA.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="expertise">
+            <div class="icon" aria-hidden="true"></div>
+            <h3>Automatisation des processus</h3>
+            <p>Simplifiez vos processus RH grâce à l'automatisation des tâches répétitives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Cas d'utilisation -->
+  <section class="section-cas-utilisation py-5" aria-labelledby="titre-cas">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="image-container mb-4 mb-md-0">
+        <img src="image/candidat.jpg" alt="Illustration du cas d'utilisation Plurielles" class="img-reduite">
+      </div>
+      <div class="text-content">
+        <div class="tag">Cas d'utilisation</div>
+        <h2 id="titre-cas">Nos clients, nos collaborateurs</h2>
+        <p>Découvrez comment nos clients transforment leur processus de recrutement grâce à TalentAI et deviennent de véritables partenaires dans l'amélioration continue de notre solution.</p>
+        <ul class="list-unstyled">
+          <li>&#10003; +40% de diversité dans les profils recrutés</li>
+          <li>&#10003; -60% de temps de tri des CV</li>
+          <li>&#10003; +35% de satisfaction des candidats</li>
+        </ul>
+        <div class="testimonial">
+          <p> TalentAI a révolutionné notre façon de recruter. Nous avons non seulement gagné en efficacité, mais aussi en qualité des profils sélectionnés. C'est devenu un outil indispensable pour notre agence.</p>
+          <p><strong>— Thomas Martin, Directeur d'agence de recrutement</strong></p>
+        </div>
+        <a href="cas.html" class="btn btn-primary">Découvrir comment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CTA -->
+  <section id="cta1" class="section-cta1 py-5 text-white text-center" aria-labelledby="titre-cta">
+    <div class="container">
+      <h2 id="titre-cta">Prêt à révolutionner votre recrutement ?</h2>
+      <p>Rejoignez les entreprises qui transforment leur processus RH grâce à l'IA.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="btn btn-primary mr-3">Demander une démo</a>
+        <a href="solution.html" class="btn btn-outline-light">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer .bg-secondary text-white py-5" aria-label="Pied de page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <div class="footer-logo">
+            <a href="index.html" title="Retour à l'accueil">
+              <img src="image/talentAI.png" alt="Logo de TalentAI" class="logo-img">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <p>
+            TalentAI révolutionne le recrutement grâce à l'intelligence artificielle avancée.
+          </p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5>Liens rapides</h5>
+          <ul class="list-unstyled">
+            <li><a href="#accueil" class="text-white">Accueil</a></li>
+            <li><a href="solution.html" class="text-white">Solution</a></li>
+            <li><a href="cas.html" class="text-white">étude de cas</a></li>
+            <li><a href="#equipe" class="text-white">Équipe</a></li>
+            <li><a href="#contact" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+          <h5>Suivez-nous</h5>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/company/talent-ai-2025" target="_blank" rel="noopener noreferrer" aria-label="TalentAI sur LinkedIn">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/talentai2025/" target="_blank" rel="noopener noreferrer" aria-label="TalentAI sur Instagram">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2025 TalentAI. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<!-- JS Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const burger = document.querySelector('.burger');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      burger.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        burger.setAttribute('aria-expanded', isOpen);
+      });
+    });
+  </script>
+</html>
