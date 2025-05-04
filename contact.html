@@ -346,34 +346,39 @@
       });
     });
   </script>
-    <script>
+<script>
     $(document).ready(function() {
+        // Lorsque l'utilisateur clique sur le bouton pour envoyer un autre message
         $('#send-another-message').on('click', function() {
             $('#confirmation-container').hide();
             $('#contact-form').show();
+            $('#contact-form')[0].reset(); // Réinitialiser le formulaire
         });
 
+        // Soumettre le formulaire avec AJAX
         $('#contact-form').on('submit', function(event) {
             event.preventDefault(); // Empêche le comportement par défaut du formulaire
 
+            // Utilisation d'AJAX pour soumettre le formulaire à Netlify
             $.ajax({
-                url: $(this).attr('action'),
-                type: $(this).attr('method'),
-                data: $(this).serialize(),
+                url: $(this).attr('action'),  // URL de l'action (laisser vide pour Netlify)
+                type: $(this).attr('method'), // Méthode (POST)
+                data: $(this).serialize(), // Sérialise les données du formulaire
                 success: function(response) {
-                    $('#form-messages').html(response);
-                    if (response.includes("envoyé avec succès")) {
-                        $('#contact-form').hide();
-                        $('#confirmation-container').show();
-                    }
+                    // Si la soumission est réussie, afficher le message de confirmation
+                    $('#form-messages').html('<p style="color:green;">Votre message a été envoyé avec succès !</p>');
+                    $('#contact-form').hide();
+                    $('#confirmation-container').show();
                 },
                 error: function() {
+                    // Affiche un message d'erreur en cas d'échec
                     $('#form-messages').html('<p style="color:red;">Une erreur est survenue lors de l\'envoi du formulaire.</p>');
                 }
             });
         });
     });
-    </script>
+</script>
+
 
 
 </body>
