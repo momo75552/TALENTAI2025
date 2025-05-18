@@ -1,13 +1,12 @@
 html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-min-height: 100vh;
-  font-size: 1.25rem; /* Augmentez la taille de police globale */
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+  font-family: Arial, sans-serif !important;
+min-height: 100vh !important;
+  font-size: 1.25rem !important; /* Augmentez la taille de police globale */
 }
-
 
 .page-container {
   width: 100%;
